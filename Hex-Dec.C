@@ -50,14 +50,6 @@ void DecimalToHex(int n,char hex1[]){
 
 int main()
 {
-    char number1[] = "2BFC";
-    long long num1 = HexToDec(number1);
-    char number2[] = "54A7";
-    long long num2 = HexToDec (number2);
-    long long value = num1 + num2;
-    char output[20];
-    DecimalToHex(value,output);
-    printf("%s",output);
 
     return 0;
 }
