@@ -84,10 +84,9 @@ void(long long binary,char hex[]){
      tempBinary = binary;
     index = 0;
     
-    /* Find hexadecimal of binary number */
     while(tempBinary!=0)
     {
-        /* Group binary to last four digits */
+        
         digit = tempBinary % 10000;
 
         /* Find hexadecimal equivalent of last four digit */
@@ -97,12 +96,12 @@ void(long long binary,char hex[]){
             {
                 if(i<10)
                 {
-                    /* 0-9 integer constant */
+                    
                     hex[index] = (char)(i + 48);
                 }
                 else
                 {
-                    /* A-F character constant */
+                    
                     hex[index] = (char)((i-10) + 65);
                 }
 
@@ -111,12 +110,12 @@ void(long long binary,char hex[]){
             }
         }
 
-        /* Remove the last 4 digits as it is processed */
+        
         tempBinary /= 10000;
     }
     hex[index] = '\0';
 
-    /* Reverse the hex digits */
+  
     strrev(hex);
 }
 
