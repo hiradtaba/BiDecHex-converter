@@ -68,5 +68,8 @@ void(long long binary,char hex[]){
 
     /* Reverse the hex digits */
     strrev(hex);
+}
 
+int main(){
+    return 0;
 }
