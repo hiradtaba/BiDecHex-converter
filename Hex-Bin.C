@@ -72,8 +72,6 @@ void HexToBin(char hexdec[])
     } 
 }
 
-
-
 void(long long binary,char hex[]){
 
    int hexConstant[] = {0, 1, 10, 11, 100, 101, 110, 111, 1000, 
@@ -120,5 +118,6 @@ void(long long binary,char hex[]){
 }
 
 int main(){
+  
     return 0;
 }
